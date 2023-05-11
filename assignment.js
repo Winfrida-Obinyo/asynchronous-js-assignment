@@ -11,19 +11,14 @@
     //  that returns a Promise with user data when given a user ID. Write
     //  an asynchronous function that fetches and logs the data for each 
     // user ID one by one, in sequence.
-    async function fetchUserDataSequentially(userIds) {
+    async function fetchUserData(userIds) {
         for (let i = 0; i < userIds.length; i++) {
           const userData = await userData(userIds[i]);
           console.log(userData);
         }
       }
 const userIds = [1, 2, 3, 4, 5];
-fetchUserDataSequentially(userIds);
-
-
-
-
-
+fetchUserData(userIds);
 
 // You have an asynchronous function performTask() 
 // that returns a Promise. The Promise resolves 
